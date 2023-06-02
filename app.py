@@ -7,8 +7,7 @@ from flask_ngrok import run_with_ngrok
 # membuat nama app
 app = Flask(__name__)
 app.secret_key = '2Ox2BCzXHp8J8hcbwFWtSYF1s05_4YNvFMMrgMZRDWJ1YrSxS'
-
-# run_with_ngrok(app)
+run_with_ngrok(app)
 
 data = pd.read_excel('predicted_values.xlsx')
 
@@ -103,4 +102,5 @@ def filter_data():
 
 # =========================== MENJALANKAN APP ===================================
 if __name__ == '__main__':
-    app.run(debug=True, host='127.0.0.1', port=5000)
+    # Run Flask di localhost 
+	app.run()
