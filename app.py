@@ -6,7 +6,8 @@ from flask_ngrok import run_with_ngrok
 
 # membuat nama app
 app = Flask(__name__)
-app.secret_key = '2Ox2BCzXHp8J8hcbwFWtSYF1s05_4YNvFMMrgMZRDWJ1YrSxS'
+app.config['FLASKNGROK_AUTH_TOKEN'] = '2QdgscZzay4kfUMIfCjuEI0I8KP_5d7nqeSgCCnEk2cbm9LaL'
+app.secret_key = '2Qe0L2JsvGTk1mVGNokLvRf1v8j_4YSvG723TxcS73PCRTdca'
 run_with_ngrok(app)
 
 data = pd.read_excel('predicted_values.xlsx')
@@ -16,49 +17,10 @@ data = pd.read_excel('predicted_values.xlsx')
 def index():
     limited_data = data.head(50)
     table_data1 = limited_data.to_dict(orient='records')
-     # Read the Excel file
-    # data = pd.read_excel('predicted_values.xlsx')
-
-    # # Limit the data to 100 rows
-    # limited_data = data.head(100)
-
-    # table_data = limited_data.to_html(classes='data')
-
-    # # Convert the data to the appropriate format for HTML rendering
-    # # table_data = data.to_dict(orient='records')
-
-    # #FILTERING DATA
-    # month = request.args.get('month')
-    # year = request.args.get('year')
-
-    # if month and year:
-    #     filtered_data = data[
-    #         (data['Date'].dt.month == int(month)) & (data['Date'].dt.year == int(year))
-    #     ]
-    # Extract the Date and Predicted USD_IDR Exchange Rate columns
-    # dates = limited_data['Date']
-    # exchange_rates = limited_data['Exchange rate']
-
-    # # Create a line plot
-    # plt.figure(figsize=(10, 6))
-    # plt.plot(dates, exchange_rates, color='green', marker='o', linestyle='solid', linewidth=2, markersize=6)
-    # plt.xlabel('Date')
-    # plt.ylabel('Predicted USD_IDR Exchange Rate')
-    # plt.title('Predicted Exchange Rate')
-    # plt.xticks(rotation=45)
-    # plt.tight_layout()
-
-    # # Save the plot to a file
-    # plot_path = 'static/plot.png'
-    # plt.savefig(plot_path)
-    # plt.close()
-
-    # Render the HTML template and pass the data to the web page
-    # return render_template('index.html', table_data=table_data, data=filtered_data.to_html())
     return render_template('index.html', table_data1=table_data1)
 
 # =========================== TUKAR MATA UANG ===================================
-@app.route('/konversi', methods=['POST'])
+@app.route('/', methods=['POST'])
 def convert():
     if request.method == 'POST':
         amount = float(request.form['amount'])
@@ -86,7 +48,7 @@ def prediksi():
 
     return render_template('index.html', table_data=table_data)
 
-# =========================== FILTER ===================================
+# # =========================== FILTER ===================================
 @app.route('/filter', methods=['GET', 'POST'])
 def filter_data():
     # Get the month and year values from the form
@@ -102,5 +64,4 @@ def filter_data():
 
 # =========================== MENJALANKAN APP ===================================
 if __name__ == '__main__':
-    # Run Flask di localhost 
 	app.run()
