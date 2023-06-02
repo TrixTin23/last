@@ -8,7 +8,7 @@ from flask_ngrok import run_with_ngrok
 app = Flask(__name__)
 app.secret_key = '2Ox2BCzXHp8J8hcbwFWtSYF1s05_4YNvFMMrgMZRDWJ1YrSxS'
 
-run_with_ngrok(app)
+# run_with_ngrok(app)
 
 data = pd.read_excel('predicted_values.xlsx')
 
