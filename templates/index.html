@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Ewako - Excange</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/fontawesome.css')}}"> -->
+    <!-- Favicons -->
+    <link href="{{ url_for('static', filename='assets/img/favicon.png')}}" rel="icon">
+    <link href="{{ url_for('static', filename='assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,600,700"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="{{ url_for('static', filename='assets/vendor/aos/aos.css')}}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <!-- Template Main CSS File -->
+    <link href="{{ url_for('static', filename='assets/css/style.css')}}" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: Rapid
+  * Updated: Mar 10 2023 with Bootstrap v5.2.3
+  * Template URL: https://bootstrapmade.com/rapid-multipurpose-bootstrap-business-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+        <div class="container d-flex align-items-center">
+
+            <h1 class="logo me-auto"><a href="/">Exchange</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                    <li><a class="nav-link scrollto" href="#about">About</a></li>
+                    <li><a class="nav-link scrollto" href="#news">News</a></li>
+                    <li><a class="nav-link scrollto " href="#aplikasi">Aplikasi</a></li>
+                    <li><a class="nav-link scrollto" href="#team">Team</a></li>
+                    <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+
+
+        </div>
+    </header><!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="clearfix">
+        <div class="container d-flex h-100">
+            <div class="row justify-content-center align-self-center" data-aos="fade-up">
+                <div class="col-lg-6 intro-info order-lg-first order-last" data-aos="zoom-in" data-aos-delay="100">
+                    <h2>Berapakah<br>Nilai Uang Dolar($) & Rupiah(IDR) <span>Hari ini?</span></h2>
+                    <div>
+                        <a href="#aplikasi" class="btn-get-started scrollto">Get Started</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 intro-img order-lg-last order-first" data-aos="zoom-out" data-aos-delay="200">
+                    <img src="{{ url_for('static', filename='assets/img/bg.jpg')}}" alt="" class="img-fluid">
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End Hero -->
+
+    <main id="main">
+
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about">
+
+            <div class="container" data-aos="fade-up">
+                <div class="row">
+
+                    <div class="col-lg-5 col-md-6">
+                        <div class="about-img" data-aos="fade-right" data-aos-delay="100">
+                            <img src="{{ url_for('static', filename='assets/img/about.png')}}" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7 col-md-6">
+                        <div class="about-content" data-aos="fade-left" data-aos-delay="100">
+                            <h2>About Us</h2>
+                            <h3>Prediksi Nilai Mata Uang Dolar dan Rupiah.</h3>
+                            <p>Prediksi ini guna melakukan forcasting nilai tukar dollar terhadap rupiah menggunakan
+                                artificial neural network. Hasil dari prediksi ini yang berupa prakiraan Harga nilai
+                                tukar dollar terhadap rupiah untuk 2 tahun kedepan yang diharapkan dapat dijadikan
+                                perimbangan bagi investor dalam menginvestasikan sahamnya.</p>
+                            <p>Memprediksi nilai tukar dolar dan rupiah memiliki beberapa potensi keuntungan, baik bagi
+                                individu maupun untuk organisasi/lembaga tertentu. Berikut adalah beberapa keuntungan
+                                yang dapat diperoleh dari memprediksi nilai tukar mata uang:</p>
+                            <ul>
+                                <li><i class="bi bi-check-circle"></i> Perencanaan Keuangan yang Lebih Baik: Dengan
+                                    memiliki prediksi nilai tukar yang lebih akurat, individu atau perusahaan dapat
+                                    merencanakan keuangan mereka dengan lebih baik. Mereka dapat mengantisipasi
+                                    perubahan nilai tukar yang signifikan dan mengambil tindakan yang sesuai untuk
+                                    mengelola risiko dan peluang yang terkait.</li>
+                                <li><i class="bi bi-check-circle"></i> Pengelolaan Risiko Valuta Asing: Bagi perusahaan
+                                    yang terlibat dalam perdagangan internasional atau memiliki operasi global,
+                                    memprediksi nilai tukar dapat membantu dalam pengelolaan risiko valuta asing. Dengan
+                                    memahami pergerakan nilai tukar, perusahaan dapat mengambil langkah-langkah untuk
+                                    melindungi diri dari fluktuasi yang merugikan, seperti menggunakan instrumen
+                                    derivatif atau melakukan lindung nilai (hedging).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section><!-- End About Section -->
+
+
+        <!-- ======= Services Section ======= -->
+        <section id="news" class="news section-bg">
+            <div class="container" data-aos="fade-up">
+
+                <header class="section-header">
+                    <h3>News</h3>
+                    <p>Beberapa faktor utama yang dapat mempengaruhi nilai tukar dolar dan rupiah.</p>
+                </header>
+
+                <div class="row g-5">
+
+                    <div class="col-md-6 col-lg-4 wow bounceInUp" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="box">
+                            <div class="icon" style="background: #fceef3;"><i class="bi bi-briefcase"
+                                    style="color: #ff689b;"></i></div>
+                            <h4 class="title"><a href=""> Perbedaan Angka Inflasi</a></h4>
+                            <p class="description">Secara umum, sebuah negara dengan tingkat inflasi yang konsisten
+                                lebih rendah menunjukkan peningkatan nilai mata uang, sebagaimana daya belinya relatif
+                                meningkat terhadap mata uang lainnya. </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="box">
+                            <div class="icon" style="background: #fff0da;"><i class="bi bi-card-checklist"
+                                    style="color: #e98e06;"></i></div>
+                            <h4 class="title"><a href="">Perbedaan pada Suku Bunga</a></h4>
+                            <p class="description">Suku bunga, inflasi dan nilai tukar sangat berkorelasi satu sama
+                                lain. Dengan memanipulasi suku bunga, bank sentral, dalam hal ini Bank Indonesia,
+                                memiliki pengaruh terhadap inflasi dan nilai tukar sehingga mengubah tingkat suku bunga
+                                berdampak pada perubahan inflasi dan nilai mata uang. </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="box">
+                            <div class="icon" style="background: #e6fdfc;"><i class="bi bi-bar-chart"
+                                    style="color: #3fcdc7;"></i></div>
+                            <h4 class="title"><a href="">Defisit Akun Berjalan</a></h4>
+                            <p class="description">Transaksi berjalan adalah neraca perdagangan antara negara dan mitra
+                                dagangnya yang merupakan semua pembayaran antar negara untuk barang, jasa, bunga dan
+                                dividen. Defisit transaksi berjalan menunjukkan negara ini menghabiskan lebih banyak
+                                dana pada perdagangan luar negeri daripada pendapatannya, dan karena itu harus meminjam
+                                modal dari sumber-sumber asing untuk menutupi defisit.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="box">
+                            <div class="icon" style="background: #eafde7;"><i class="bi bi-binoculars"
+                                    style="color:#41cf2e;"></i></div>
+                            <h4 class="title"><a href="">Utang Publik</a></h4>
+                            <p class="description">Negara akan terlibat dalam pembiayaan defisit besar-besaran untuk
+                                membayar proyek-proyek sektor publik dan pendanaan pemerintah untuk merangsang ekonomi
+                                domestik. Sementara, faktanya, negara-negara dengan defisit publik dan utang yang besar
+                                kurang menarik bagi investor asing. Alasannya? Sebuah utang besar mendorong inflasi, dan
+                                jika inflasi tinggi, utang tak akan dibayar seketika dan akhirnya terbayar dengan dolar
+                                nyata lebih murah di masa depan.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200"">
+        <div class=" box">
+                        <div class="icon" style="background: #e1eeff;"><i class="bi bi-brightness-high"
+                                style="color: #2282ff;"></i></div>
+                        <h4 class="title"><a href="">Ketentuan Perdagangan</a></h4>
+                        <p class="description">Sebagai rasio yang membandingkan harga ekspor dan impor, ketentuan
+                            perdagangan yang terkait dengan rekening giro dan neraca pembayaran. Jika harga ekspor suatu
+                            negara meningkat dengan tingkat yang lebih besar daripada impornya, Ketentuan perdagangannya
+                            baik dan menguntungkan. Peningkatan ketentuan perdagangannya menunjukkan permintaan yang
+                            lebih besar untuk ekspor negara itu. </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="box">
+                        <div class="icon" style="background: #ecebff;"><i class="bi bi-calendar4-week"
+                                style="color: #8660fe;"></i></div>
+                        <h4 class="title"><a href="">Stabilitas Politik dan Kinerja Ekonomi</a></h4>
+                        <p class="description">Investor asing pasti mencari negara yang stabil dengan kinerja ekonomi
+                            yang kuat di mana untuk menanamkan modalnya. Sebuah negara dengan situasi positif seperti
+                            itu akan menarik dana investasi daripada negara-negara lain yang dianggap memiliki resiko
+                            politik dan ekonomi.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
+        </section><!-- End Services Section -->
+
+        <!-- ======= Why Us Section ======= -->
+        <section id="why-us" class="why-us">
+            <div class="container-fluid" data-aos="fade-up">
+
+                <header class="section-header">
+                    <h3>Ada Berita Apa Hari Ini?</h3>
+                </header>
+
+                <div class="row">
+
+                    <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="why-us-img">
+                            <img src="{{ url_for('static', filename='assets/img/1(1).png')}}" alt="" class="img-fluid">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="why-us-content">
+                            <p>Penyebab Rupiah Melemah Serta Dampaknya bagi Perekonomian Negara, Patut Diketahui</p>
+                            <p>
+                                Merdeka.com - Berita mengenai melemahnya nilai rupiah seolah tak pernah ada habisnya.
+                                Melemahnya rupiah lebih mendominasi dibanding penguatannya.
+                                Hal ini tentu berdampak pada berbagai sektor perekonomian di dalam negeri.
+                            </p>
+
+                            <div class="features clearfix" data-aos="fade-up" data-aos-delay="100">
+                                <i class="bi bi-bookmarks" style="color: #f058dc;"></i>
+                                <h4>Penyebab Rupiah Melemah: Faktor Internal</h4>
+                                <p>Keluarnya sebagian besar investasi portofolio asing dari Indonesia yang menurunkan
+                                    nilai tukar rupiah karena dalam proses ini investor asing menukar rupiah dengan mata
+                                    uang utama dunia, seperti dolar AS untuk diputar dan di investasikan di negara lain.
+                                </p>
+                            </div>
+
+                            <div class="features clearfix" data-aos="fade-up" data-aos-delay="200">
+                                <i class="bi bi-box-seam" style="color: #ffb774;"></i>
+                                <h4>Penyebab Rupiah Melemah: Faktor Eksternal
+                                </h4>
+                                <p>Faktor eksternal penyebab rupiah melemah lebih disebabkan oleh menguatnya ekonomi
+                                    Amerika Serikat (AS). Pertumbuhan ekonomi AS yang kuat menimbulkan spekulasi Bank
+                                    Sentral AS (The Fed) akan segera menaikkan suku bunga (Fed Rate).</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section><!-- End Why Us Section -->
+
+        <!-- ======= Call To Action Section ======= -->
+        <section id="call-to-action" class="call-to-action">
+            <div class="container" data-aos="zoom-out">
+                <div class="row">
+                    <div class="col-lg-9 text-center text-lg-start">
+                        <h3 class="cta-title">Penyebab Harga Dollar Terus Menguat</h3>
+                        <p class="cta-text"> Merdeka.com - Nilai tukar dollar membandingkan nilainya dengan mata uang
+                            negara lain. Hal ini memungkinkan Anda untuk menentukan berapa banyak mata uang tertentu
+                            yang dapat Anda tukarkan dengan dollar. Pengukuran nilai tukar yang paling populer adalah
+                            Indeks Dolar AS. Nilai tukar ini berubah setiap hari karena mata uang diperdagangkan di
+                            pasar valuta asing. Nilai "forex" suatu mata uang tergantung pada beberapa faktor, termasuk:
+                            Suku bunga bank sentral,Tingkat utang negara dan Kekuatan ekonomi.Ketika faktor-faktor ini
+                            kuat, maka hal yang sama juga terjadi dengan nilai mata uangnya. Sebagian besar negara
+                            memiliki nilai tukar yang fleksibel dan memungkinkan perdagangan valas untuk menentukan
+                            nilai mata uang mereka. Federal Reserve memiliki banyak alat moneter yang dapat memengaruhi
+                            kekuatan dollar. Alat-alat ini adalah bagaimana pemerintah dapat mengatur nilai tukar,
+                            meskipun secara tidak langsung.
+                        </p>
+                    </div>
+                    <div class="col-lg-3 cta-btn-container text-center">
+                        <a class="cta-btn align-middle" href="#">Call To Action</a>
+                    </div>
+                </div>
+
+            </div>
+        </section><!--  End Call To Action Section -->
+
+        <!-- ======= Features Section ======= -->
+        <section id="features" class="features">
+            <div class="container" data-aos="fade-up">
+
+                <div class="row feature-item">
+                    <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+                        <img src="{{ url_for('static', filename='assets/img/1 (2).jpg')}}" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0" data-aos="fade-left" data-aos-delay="150">
+                        <h4>RUPIAH - BANK INDONESIA</h4>
+                        <p>
+                            Rupiah, atau lengkapnya Rupiah Indonesia, adalah mata uang resmi yang berlaku di Republik
+                            Indonesia. Mata uang ini dicetak dan diatur penggunaannya oleh Bank Indonesia dengan kode
+                            ISO 4217 IDR. Secara tidak formal, orang Indonesia juga menyebut mata uang ini dengan nama
+                            "perak". Wikipedia
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="row feature-item mt-5 pt-5">
+                    <div class="col-lg-6 wow fadeInUp order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+                        <img src="{{ url_for('static', filename='assets/img/1 (3).jpg')}}" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-right"
+                        data-aos-delay="150">
+                        <h4>DOLLAR</h4>
+                        <p>
+                            Dolar Amerika Serikat ( simbol : $ ; kode : USD ; juga disingkat US$ atau Dolar A.S., untuk
+                            membedakannya dari mata uang denominasi dolar lainnya ; disebut sebagai dolar, dolar A.S.,
+                            dolar Amerika , atau bahasa sehari-hari di Amerika Serikat sebagai buck ) adalah mata uang
+                            resmi dari Amerika Serikat dan beberapa negara lain. Undang -Undang Koin tahun 1792
+                            memperkenalkan dolar A.S. setara dengan dolar perak Spanyol , membaginya menjadi 100 sen,
+                            dan mengizinkan pencetakan koin dalam mata uang dolar dan sen. Uang kertas A.S. diterbitkan
+                            dalam bentuk Federal Reserve Notes , yang populer disebut greenback karena warnanya yang
+                            dominan hijau.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- End Features Section -->
+
+        <!-- =======aplikasi Section ======= -->
+        <section id="aplikasi" class="news section-bg">
+            <div class="container" data-aos="fade-up">
+
+                <header class="section-header mt-3">
+                    <h3>Konversi Mata Uang</h3>
+                    <p>Lakukan Konversi Mata Uang Disini</p>
+                </header>
+
+                <div class="row g-5">
+
+                    <div class="col-md-6 col-lg-4 wow bounceInUp" data-aos="zoom-in" data-aos-delay="100">
+                    </div>
+                    <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="box">
+                            <form action="/" method="post">
+                                <div class="form-group">
+                                    <input type="number" name="amount" class="form-control" id="amount"
+                                        placeholder="Masukan Nilai Uang...." required>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <select class="form-control" name="base_currency" id="base_currency"
+                                    placeholder="Your Email" required>
+                                        <option selected>Pilih Mata Uang Asal</option>
+                                        <option value="IDR">IDR</option>
+                                        <option value="USD">USD</option>
+                                    </select>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <select class="form-control" name="target_currency" id="target_currency"
+                                    placeholder="Your Email" required>
+                                        <option selected>Pilih Mata Uang Tujuan</option>
+                                        <option value="IDR">IDR</option>
+                                        <option value="USD">USD</option>
+                                    </select>
+                                </div>
+                                <div class="text-center mt-2">
+                                        <button type="submit" class="btn btn-primary" title="Send Message" id="aplikasi">Konversi</button>
+                                    </div><br>
+                                {% if converted_amount %}
+                                <div class="alert alert-info mt-3" role="alert">
+                                <h5>Hasil konversi mata uang :</h5>
+                                    <h4>{{ amount }} {{ base_currency }} = {{ converted_amount }} {{ target_currency }}</h4>
+                                {% endif %}   
+                                </div><br>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+                    </div>
+            </div>
+        </section>
+
+        <section id="features" class="features mt-3">
+            <div class="container text-center" data-aos="fade-up">
+                <div class="row">
+                    <div class="col">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Exchange Rate</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for row in table_data1 %}
+                                <tr>
+                                    <td>{{ row['Date'].date() }}</td>
+                                    <td>{{ "{:.3f}".format(row['Exchange rate']) }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col">
+                        <form method="POST" action="/filter">
+                            <label for="month">Month:</label>
+                            <input type="number" id="month" name="month" min="1" max="12" required>
+                            <label for="year">Year:</label>
+                            <input type="number" id="year" name="year" min="2023" max="2025" required>
+                            <input type="submit" value="Filter">
+                        </form>
+                        
+                        <!-- {% if table_data %} -->
+                        <h2>Prediksi Nilai Tukar</h2>
+                        {{ table_data | safe }}
+                    </div>
+                </div>          
+            </div>
+                <!-- {% endif %} -->
+                <!-- <h2>Prediksi Nilai Tukar USD_IDR</h2> -->
+                <!-- {{ data | safe }} -->
+                <!-- Display the plot image -->
+                <!-- <img src="{{ plot_path }}" alt="Predicted Exchange Rate"> -->     
+        </section>
+
+
+        <!-- ======= Team Section ======= -->
+        <section id="team" class="team section-bg">
+            <div class="container" data-aos="fade-up">
+                <div class="section-header">
+                    <h3>Team</h3>
+                    <p>Ewako - Exchange</p>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="member">
+                            <img src="{{ url_for('static', filename='assets/img/lulu.JPG')}}" class="img-fluid" alt="">
+                            <div class="member-info">
+                                <div class="member-info-content">
+                                    <h4>Baiq Lulu'Il Mansyuro</h4>
+                                    <span>Universitas Bumigora</span>
+                                    <div class="social">
+                                        <a href=""><i class="bi bi-twitter"></i></a>
+                                        <a href=""><i class="bi bi-facebook"></i></a>
+                                        <a href=""><i class="bi bi-instagram"></i></a>
+                                        <a href=""><i class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="member">
+                            <img src="{{ url_for('static', filename='assets/img/dastin.jpg')}}" class="img-fluid"
+                                alt="">
+                            <div class="member-info">
+                                <div class="member-info-content">
+                                    <h4>Dastin Pranata Yuda</h4>
+                                    <span>Institut Teknologi Kalimantan</span>
+                                    <div class="social">
+                                        <a href=""><i class="bi bi-twitter"></i></a>
+                                        <a href=""><i class="bi bi-facebook"></i></a>
+                                        <a href=""><i class="bi bi-instagram"></i></a>
+                                        <a href=""><i class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="member">
+                            <img src="{{ url_for('static', filename='assets/img/haga.jpg')}}" class="img-fluid" alt="">
+                            <div class="member-info">
+                                <div class="member-info-content">
+                                    <h4>I Gede Haga Olas Tyamarta</h4>
+                                    <span>Universitas Pendidikan Ganesha</span>
+                                    <div class="social">
+                                        <a href=""><i class="bi bi-twitter"></i></a>
+                                        <a href=""><i class="bi bi-facebook"></i></a>
+                                        <a href=""><i class="bi bi-instagram"></i></a>
+                                        <a href=""><i class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="member">
+                            <img src="{{ url_for('static', filename='assets/img/brenda.jpg')}}" class="img-fluid"
+                                alt="">
+                            <div class="member-info">
+                                <div class="member-info-content">
+                                    <h4>Brenda Picauly</h4>
+                                    <span>Universitas Nusantara Manado</span>
+                                    <div class="social">
+                                        <a href=""><i class="bi bi-twitter"></i></a>
+                                        <a href=""><i class="bi bi-facebook"></i></a>
+                                        <a href=""><i class="bi bi-instagram"></i></a>
+                                        <a href=""><i class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- End Team Section -->
+
+        <!-- ======= Testimonials Section ======= -->
+        <section id="testimonials" class="testimonials">
+            <div class="container" data-aos="zoom-in">
+
+                <header class="section-header">
+                    <h3>Aplication Developer</h3>
+                </header>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+
+                        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item">
+                                        <img src="{{ url_for('static', filename='assets/img/lulu.JPG')}}"
+                                            class="testimonial-img" alt="">
+                                        <h3>Baiq Lulu'Il Mansyuro</h3>
+                                        <h4>Front-end development</h4>
+                                        <p>
+                                            Ini melibatkan pengembangan tampilan dan interaksi situs web yang dapat dilihat oleh pengguna. Bahasa pemrograman yang digunakan dalam front-end development adalah HTML, CSS dan JavaScript. Front-end developer bertanggung jawab untuk memastikan bahwa situs web memiliki tampilan yang menarik, responsif, dan mudah digunakan.
+                                        </p>
+                                    </div>
+                                </div><!-- End testimonial item -->
+
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item">
+                                        <img src="{{ url_for('static', filename='assets/img/dastin.jpg')}}"
+                                            class="testimonial-img" alt="">
+                                        <h3>Dastin Pranata Yuda</h3>
+                                        <h4>Back-end development & Deployment</h4>
+                                        <p>
+                                            Ini melibatkan pengembangan server-side dari sebuah situs web. Bahasa pemrograman yang sering digunakan dalam back-end development yaitu Python. Back-end developer bertanggung jawab untuk mengatur logika dan fungsi di balik layar situs web, mengelola basis data, dan mengelola komunikasi antara server dan klien.
+                                        </p>
+                                    </div>
+                                </div><!-- End testimonial item -->
+
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item">
+                                        <img src="{{ url_for('static', filename='assets/img/haga.jpg')}}"
+                                            class="testimonial-img" alt="">
+                                        <h3>I Gede Haga Olas Tyamarta</h3>
+                                        <h4>Web Deployment</h4>
+                                        <p>
+                                            Mempersiapkan fitur - fitur website yang akan diunggah ke internet serta mengunggah aplikasi website ke internet agar dapat diakses dan digunakan oleh pengguna melalui internet. 
+                                            Fitur - fitur yang disiapkan berupa konversi real time nilai mata uang dari USD ke IDR maupun sebaliknya, dan prediksi nilai mata uang dari USD ke IDR beberapa tahun kedepan. Setelah fitur sudah selesai diinput dalam back-end, kemudian akan diunggah ke internet menggunakan framework Flask dan melakukan proses deployment dengan menggunakan situs pythonanywhere.com agar bisa diakses dan digunakan oleh pengguna.
+                                        </p>
+                                    </div>
+                                </div><!-- End testimonial item -->
+
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item">
+                                        <img src="{{ url_for('static', filename='assets/img/brenda.jpg')}}"
+                                            class="testimonial-img" alt="">
+                                        <h3>Brenda Picauly</h3>
+                                        <h4>Copy Writer</h4>
+                                        <p>
+                                            Menyusun Presentasi pada Powerpoint.
+                                        </p>
+                                    </div>
+                                </div><!-- End testimonial item -->
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- End Testimonials Section -->
+
+        
+
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+                class="bi bi-arrow-up-short"></i></a>
+
+        <!-- Vendor JS Files -->
+        <script src="{{ url_for('static', filename='assets/vendor/purecounter/purecounter_vanilla.js')}}"></script>
+        <script src="{{ url_for('static', filename='assets/vendor/aos/aos.js')}}"></script>
+        <script src="{{ url_for('static', filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+        <script src="{{ url_for('static', filename='assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
+        <script src="{{ url_for('static', filename='assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+        <script src="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
+        <script src="{{ url_for('static', filename='assets/vendor/php-email-form/validate.js')}}"></script>
+
+        <!-- Template Main JS File -->
+        <script src="{{ url_for('static', filename='assets/js/main.js')}}"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+        <footer class="bg-light text-center text-lg-start">
+            <!-- Copyright -->
+            <div class="text-center text-white p-3" style="background-color: #2D2B46;">
+              © 2023 Copyright:
+              <a class="text-white fw-bold" href="https://mdbootstrap.com/">EWAKO EXCHANGE</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
+</body>
+</html>

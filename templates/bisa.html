@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/">RELOAD</a>
+    <form action="/tukar" method="post">
+        <div class="form-group">
+            <input type="number" name="amount" class="form-control" id="amount"
+                placeholder="Masukan Nilai Uang...." required>
+        </div>
+        <div class="form-group mt-3">
+            <select class="form-control" name="base_currency" id="base_currency"
+            placeholder="Your Email" required>
+                <option selected>Pilih Mata Uang Asal</option>
+                <option value="IDR">IDR</option>
+                <option value="USD">USD</option>
+            </select>
+        </div>
+        <div class="form-group mt-3">
+            <select class="form-control" name="target_currency" id="target_currency"
+            placeholder="Your Email" required>
+                <option selected>Pilih Mata Uang Tujuan</option>
+                <option value="IDR">IDR</option>
+                <option value="USD">USD</option>
+            </select>
+        </div>
+        <div class="text-center mt-2">
+            <button type="submit" class="btn btn-secondary" title="Send Message" id="aplikasi">Konversi</button>
+        </div><br>
+        {% if converted_amount %}
+        <div class="alert alert-info mt-3" role="alert">
+        <h5>Hasil konversi mata uang :</h5>
+            <h6>{{ amount }} {{ base_currency }} = {{ converted_amount }} {{ target_currency }}</h6>
+        {% endif %}   
+        </div><br>
+    </form>
+
+    <h1>Prediksi</h1>
+    <form action="/prediksi" method="post">
+        <div class="form-group mt-3">
+            <input list="bulan" name="bisa" id="bulan">
+            <datalist id="bulan">
+              <option value="31-05-2023">
+              <option value="01-06-2023">
+              <option value="01-07-2023">
+              <option value="01-08-2023">
+              <option value="01-09-2023">
+              <option value="01-10-2023">
+              <option value="01-11-2023">
+              <option value="01-12-2023">
+              <option value="01-01-2024">
+              <option value="01-02-2024">
+              <option value="01-03-2024">
+              <option value="01-04-2024">
+              <option value="01-05-2024">
+              <option value="01-06-2024">
+              <option value="01-07-2024">
+              <option value="01-08-2024">
+              <option value="01-09-2024">
+              <option value="01-10-2024">
+              <option value="01-11-2024">
+              <option value="01-12-2024">
+              <option value="01-01-2025">
+              <option value="01-02-2025">
+              <option value="01-03-2025">
+              <option value="01-04-2025">
+              <option value="01-05-2025">
+            </datalist>
+        </div>
+        <div class="text-center mt-2">
+            <button type="submit" class="btn btn-secondary" title="Send Message" id="aplikasi">Prediksi</button>
+        </div><br>
+        {% if hasil %}
+        <div class="alert alert-info mt-3" role="alert">
+        <h5>Hasil Prediksi Pada {{bisa}} :</h5>
+            <h6>{{hasil}}</h6>
+        {% endif %}   
+        </div><br>
+    </form>
+</body>
+</html>
