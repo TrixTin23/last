@@ -400,29 +400,33 @@
             <div class="container text-center" data-aos="fade-up">
                 <div class="row">
                     <div class="col">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>Date</th>
-                                    <th>Exchange Rate</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {% for row in table_data1 %}
-                                <tr>
+                        <div class="card-body p-0">
+                            <div class="table-responsive table-scroll" data-mdb-perfect-scrollbar="true" style="position: relative; height: 700px">
+                              <table class="table mb-0 ">
+                                <thead style="background-color: #393939;" >
+                                  <tr class="text-uppercase fw-bold">
+                                    <th scope="col" class="text-warning">Date</th>
+                                    <th scope="col" class="text-warning">Exchange Rate</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  {% for row in table_data1 %}
+                                  <tr>
                                     <td>{{ row['Date'].date() }}</td>
                                     <td>{{ "{:.3f}".format(row['Exchange rate']) }}</td>
-                                </tr>
-                                {% endfor %}
-                            </tbody>
-                        </table>
+                                  </tr>
+                                  {% endfor %}
+                                </tbody>
+                              </table>
+                            </div>
+                        </div>
                     </div>
                     <div class="col">
                         <form method="POST" action="/filter">
                             <label for="month">Month:</label>
                             <input type="number" id="month" name="month" min="1" max="12" required>
                             <label for="year">Year:</label>
-                            <input type="number" id="year" name="year" min="2023" max="2025" required>
+                            <input type="number" id="year" name="year" min="2023" max="2028" required>
                             <input type="submit" value="Filter">
                         </form>
                         

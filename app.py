@@ -16,7 +16,7 @@ data = pd.read_excel('predicted_values.xlsx')
 @app.route('/')
 def index():
     limited_data = data.head(50)
-    table_data1 = limited_data.to_dict(orient='records')
+    table_data1 = data.to_dict(orient='records')
     return render_template('index.html', table_data1=table_data1)
 
 # =========================== TUKAR MATA UANG ===================================
